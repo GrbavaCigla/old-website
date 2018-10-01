@@ -43,9 +43,6 @@ html,body{
 	display:inline-flex;
 }
 @media (orientation: portrait) {
-	.welcome{
-		height: 100%;
-	}
 	.welcome img{
 		display:none;
 	}
