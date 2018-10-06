@@ -11,7 +11,6 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
     clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
-    overflow:hidden;
 }
 .welcome img{
 	width:16vh;
@@ -61,8 +60,9 @@ html,body{
 	height:55vh;
 	display:inline-table;
 	margin:5vh;
-	font-family: "Dosis";
-	box-shadow: 0px 0px 10px 1px rgba(0,0,0,01);
+	font-family: "Montserrat";
+	font-size:3vh;
+	box-shadow: 0px 0px 0.5vh 0.1vh rgba(0,0,0,01);
 	padding:2vh;
 }
 .grid img{
@@ -70,7 +70,6 @@ html,body{
 
 }
 .content{
-	position: relative;
 	width:80%;
 	margin:auto;
 	font-size: 5vh;
@@ -81,7 +80,7 @@ html,body{
 	background-color: #67A0BE;
 	width:100%;
 	height:40vh;
-	clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+	clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 @media (orientation: portrait) {
@@ -94,15 +93,22 @@ html,body{
 		text-align: center;
 		border-radius: 0;
 	}
+	.content{
+		width: 100%;
+
+	}
 	.grid{
-	
 		width:100%;
 		height:100%;
-		border:1px solid;
 		display:block;
-		margin:10vh 0px;
-		box-shadow: 0px 0px 10px 1px rgba(0,0,0,01);
-		padding:0vh;
+		margin:0;
+		border-bottom:0.1vh solid;
+		box-shadow: initial;
+		padding:1vh 0vh;
+	}
+	.grid:last-child{
+		border-bottom:0;
+		margin-bottom:5vh;
 	}
 
 }
