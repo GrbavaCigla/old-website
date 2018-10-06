@@ -7,7 +7,7 @@ html,body{
 	width:100%;
 	height:100vh;
 	background-image: url('Welcome.jpg');
-    background-position: center; 
+    background-position: center 0px; 
     background-repeat: no-repeat;
     background-size: cover;
     clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
@@ -42,17 +42,7 @@ html,body{
 	background-color: white;
 	display:inline-flex;
 }
-@media (orientation: portrait) {
-	.welcome img{
-		display:none;
-	}
-	.bar{
-		display:block;
-		margin:auto;
-		text-align: center;
-		border-radius: 0;
-	}
-}
+
 .bar a, .bar a:link,.bar a:visited {
   color:black;
   font-family:"Dosis";
@@ -65,7 +55,20 @@ html,body{
 .bar a:hover{
 	transform: scale(1.1);
 }
+.grid{
+	
+	width:40vh;
+	height:55vh;
+	display:inline-table;
+	margin:5vh;
+	font-family: "Dosis";
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,01);
+	padding:2vh;
+}
+.grid img{
+	width:100%;
 
+}
 .content{
 	position: relative;
 	width:80%;
@@ -77,6 +80,29 @@ html,body{
 .footer{
 	background-color: #67A0BE;
 	width:100%;
-	height:60vh;
+	height:40vh;
 	clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+@media (orientation: portrait) {
+	.welcome img{
+		display:none;
+	}
+	.bar{
+		display:block;
+		margin:auto;
+		text-align: center;
+		border-radius: 0;
+	}
+	.grid{
+	
+		width:100%;
+		height:100%;
+		border:1px solid;
+		display:block;
+		margin:10vh 0px;
+		box-shadow: 0px 0px 10px 1px rgba(0,0,0,01);
+		padding:0vh;
+	}
+
 }
