@@ -82,7 +82,18 @@ html,body{
 	height:40vh;
 	clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
+.grid a{
+	color:white;
+	background-color:lightskyblue;
+	border-radius: 0.5vh;
+	padding:1vh;
+	user-select: none;
+	text-decoration: none;
+	margin:2vh auto 0vh auto;
+	display:table;
+	font-size:2vh;
 
+}
 @media (orientation: portrait) {
 	.welcome img{
 		display:none;
@@ -95,6 +106,7 @@ html,body{
 	}
 	.content{
 		width: 100%;
+		
 
 	}
 	.grid{
@@ -102,13 +114,24 @@ html,body{
 		height:100%;
 		display:block;
 		margin:0;
-		border-bottom:0.1vh solid;
 		box-shadow: initial;
 		padding:1vh 0vh;
 	}
 	.grid:last-child{
-		border-bottom:0;
 		margin-bottom:5vh;
+	}
+	.grid:nth-child(even){
+		background-color: #c0c0c0;
+		color:white;
+	}
+	.grid:nth-child(odd){
+		background-color:#e0e0e0;
+		color:black;
+	}
+	.grid a{
+		border-radius: 0;
+		margin:2vh 0 -1vh 0;
+		display:block;
 	}
 
 }
