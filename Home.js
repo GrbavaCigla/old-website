@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		var h=$(window).height();
 		var w=$(window).width();
-		if(h/w>512/217){
+		if(h/w>250/114){
 			$(".bar").hide();
 		}else{
 			$(".bar").show();
