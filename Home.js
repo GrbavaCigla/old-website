@@ -1,8 +1,17 @@
 $(document).ready(function(){
-	$(window).scroll(function(){
-		var y=$(window).scrollTop();
-		$(".welcome").css({
-			"background-position":"center "+(y*0.6)+"px"
-		});
+	var h=$(window).height();
+	var w=$(window).width();
+	if(h/w>512/217){
+		$(".bar").hide();
+	}
+	$(window).resize(function(){
+		var h=$(window).height();
+		var w=$(window).width();
+		if(h/w>512/217){
+			$(".bar").hide();
+		}else{
+			$(".bar").show();
+		}
 	});
+	
 }); 
