@@ -33,14 +33,14 @@ for (i = 0; i < document.getElementsByClassName('checkbox').length; i++) {
 }
 
 function toggle(i){
+	var c = document.getElementsByClassName('checkbox')[i].children[0];
 	if(states[i]==0){
-		var c = document.getElementsByClassName('checkbox')[i].children[0];
 		c.style.left="50%";
+		c.style.backgroundImage="linear-gradient(45deg,#82b74b,#405d27)";
 		states[i]=1;
 	}else{
-		var c = document.getElementsByClassName('checkbox')[i].children[0];
 		c.style.left="0%";
+		c.style.backgroundImage="linear-gradient(45deg,#008EDC,#D30F64)";
 		states[i]=0;
-		
 	}
 }
