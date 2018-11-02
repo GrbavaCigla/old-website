@@ -31,9 +31,8 @@ for (i = 0; i < document.getElementsByClassName('checkbox').length; i++) {
 	div[i].setAttribute("style","height:"+div[i].clientWidth/2+"px;"+"border-radius:"+div[i].clientWidth/4+"px");
 	//#endregion
 }
-var c = document.getElementsByClassName('checkbox')[i].children[0];
 function toggle(i){
-	
+	var c = document.getElementsByClassName('checkbox')[i].children[0];
 	if(states[i]==0){
 		c.style.left="50%";
 		c.style.backgroundImage="linear-gradient(45deg,#82b74b,#405d27)";
