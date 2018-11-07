@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.preview h1,a{
+    margin:0;
+    text-decoration:none;
+}
+.preview span{
+    font-size:100%;
+    vertical-align: middle;
+}
+.preview{
+    height:40vh;
+    font-family: "Ubuntu";
+    position: relative;
+    background-image:url("https://picsum.photos/1920/700/?random");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.back{
+    position: relative;
+    padding:0.8vh;
+    color:white;
+}
+.back a{
+    color:white;
+}
+.preview h1{
+    color:rgb(255, 255, 255);
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom:0;
+    font-size:8vh;
+
+    /* width: 100%;
+    background-image: url(https://www.unsplash.it/1920/700/?random); */
+}
